@@ -12,6 +12,6 @@ body
 
 #LoginButton
 {
-background-image:linear-gradient(to right,rgb(139,92,246), rgb(14, 165, 233));
-color: rgb(255, 255, 255);
+    background-image:linear-gradient(to right,rgb(139,92,246), rgb(14, 165, 233));
+    color: rgb(255, 255, 255);
 }
