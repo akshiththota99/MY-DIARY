@@ -1,8 +1,7 @@
 body
 {
-    font-family: 'comfortaa';
-    background: rgb(140, 217, 166);
-
+    font-family: 'Comfortaa', cursive;
+    background : linear-gradient(rgb(100,238,146));
 }
 #postButton
 {
