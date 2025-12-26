@@ -1,20 +1,78 @@
+.post
+{
+    width: 550px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "comfortaa";
+    margin: 10px auto;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.9);
+
+}
+
 body
 {
+    background: linear-gradient(135deg, rgb(111, 238, 111), rgb(55, 199, 108));
     font-family: 'Comfortaa', cursive;
-
-    background : linear-gradient(to right, rgb(100,238,146), rgb(100,238,146));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#postButton
-{
-   background-image:linear-gradient(to right,rgb(139,92,246), rgb(14, 165, 233));
-   color: aliceblue;
 
+.formDiv {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.formDiv
-{
-    border: 1px black solid;
-    padding: 10px;
+
+.formDiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mb-3 label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid #ddd;
     border-radius: 10px;
-    background: white;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: rgb(139, 92, 246);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+    outline: none;
+}
+
+.btn {
+    background: linear-gradient(135deg, rgb(139, 92, 246), rgb(14, 165, 233));
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, rgb(120, 70, 220), rgb(10, 140, 200));
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
 }

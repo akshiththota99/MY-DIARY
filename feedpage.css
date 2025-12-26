@@ -1,8 +1,28 @@
+body
+{
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(135deg, rgb(111, 238, 111), rgb(55, 199, 108));
+    min-height: 100vh;
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.header {
+    text-align: right;
+    padding: 10px;
+}
+
 .AllPosts
 {
     padding: 10px;
     width: 600px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -11,16 +31,51 @@
 .Post
 {
     font-family: "comfortaa";
-    background: white;
-    border: 1px rgb(105, 23, 23) solid;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); ;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .viewPostBotton
 {
-    background-image:linear-gradient(to right,rgb(139,92,246), rgb(14, 165, 233));
-
-
+    background: linear-gradient(135deg, rgb(139, 92, 246), rgb(14, 165, 233));
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
 }
+
+.viewPostBotton:hover {
+    background: linear-gradient(135deg, rgb(78, 33, 169), rgb(10, 140, 200));
+    transform: translateY(-2px);
+}
+
+.viewPostBotton:active {
+    transform: translateY(0);
+}
+
+.logout-btn {
+
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;}
+
