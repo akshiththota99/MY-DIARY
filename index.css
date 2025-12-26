@@ -46,3 +46,18 @@ body
 #LoginButton:active {
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .login-card {
+        width: 95%;
+        padding: 20px;
+    }
+    .form-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #LoginButton {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

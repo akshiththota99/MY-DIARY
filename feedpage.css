@@ -79,3 +79,21 @@ body
     transition: background 0.3s ease, transform 0.2s ease;
     text-decoration: none;}
 
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    .AllPosts {
+        width: 95%;
+    }
+    .Post {
+        padding: 15px;
+    }
+    .header {
+        padding: 10px;
+    }
+    .logout-btn, .viewPostBotton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
