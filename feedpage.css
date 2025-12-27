@@ -132,16 +132,31 @@ body
 
 @media (max-width: 768px) {
     .main-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .AllPosts {
         width: 95%;
+        margin-top: 100px;
     }
     .Post {
         padding: 15px;
     }
     .header {
         padding: 10px;
+    }
+    .fixed-header {
+        padding: 5px;
+    }
+    .header-title {
+        flex: 1;
+    }
+    .header-buttons {
+        gap: 5px;
+    }
+    .header-buttons .btn {
+        width: 120px;
+        font-size: 14px;
+        padding: 8px 12px;
     }
     .logout-btn, .viewPostBotton {
         width: 100%;
