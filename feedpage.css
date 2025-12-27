@@ -1,16 +1,20 @@
 body
 {
     font-family: 'Comfortaa', cursive;
-    background: linear-gradient(135deg, rgb(111, 238, 111), rgb(55, 199, 108));
+    background-image: url('background 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
 .main-title {
-    font-size: 3rem;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    color: rgb(14, 14, 14);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin: 0;
+    text-align: start;
 }
 
 .header {
@@ -18,11 +22,57 @@ body
     padding: 10px;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    flex: 2;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons .btn {
+    background: linear-gradient(135deg, rgb(139, 92, 246), rgb(14, 165, 233));
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.header-buttons .btn:hover {
+    background: linear-gradient(135deg, rgb(78, 33, 169), rgb(10, 140, 200));
+    transform: translateY(-2px);
+}
+
+.header-buttons .btn:active {
+    transform: translateY(0);
+}
+
 .AllPosts
 {
     padding: 10px;
     width: 600px;
-    margin: 0 auto;
+    margin: 70px auto 0 auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -31,13 +81,14 @@ body
 .Post
 {
     font-family: "comfortaa";
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
 }
 
 .Post:hover {
