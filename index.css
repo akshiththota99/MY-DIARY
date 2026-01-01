@@ -43,7 +43,7 @@ body
 
 #LoginButton:hover {
     background: linear-gradient(135deg, rgb(120, 70, 220), rgb(10, 140, 200));
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 #LoginButton:active {

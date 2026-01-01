@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Diary - Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h2>MY DIARY</h2>
+  <a href="index.html" class="logout">Logout</a>
+</div>
+
+<!-- Profile Section -->
+<div class="profile-section">
+
+  <label class="avatar">
+    <img id="profilePic" src="profile.png" alt="Picture">
+    <span class="edit-text">Change</span>
+    <input type="file" id="photoInput" hidden>
+  </label>
+
+  <div class="profile-info">
+    <h3>Akshith</h3>
+    <p>Bio goes here...</p>
+  </div>
+
+</div>
+
+<!-- Action Buttons -->
+<div class="actions">
+  <button class="edit">Edit Profile</button>
+  <a href="post.html" class="new">New Post </button>
+</div>
+
+<!-- Feed -->
+<div class="feed" href="feedpage.html">
+  <h4>My Feed ↓</h4>
+  <ul>
+    <li>Post - 1</li>
+    <li>Post - 2</li>
+    <li>Post - 3</li>
+  </ul>
+</div>
+
+<div class="modal" id="editModal">
+  <div class="modal-content">
+    <h3>Edit Profile</h3>
+    <input id="nameInput" placeholder="Name">
+    <textarea id="bioInput" placeholder="Bio"></textarea>
+
+    <div class="modal-actions">
+      <button onclick="closeModal()">Cancel</button>
+      <button onclick="saveProfile()">Save</button>
+</body>
+</html>

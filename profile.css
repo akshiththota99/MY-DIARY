@@ -1,0 +1,170 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+  color: white;
+}
+
+.logout {
+  text-decoration: none;
+  background: #ef4444;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* PROFILE SECTION */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,.1);
+}
+
+/* AVATAR */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #0ea5e9;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CHANGE OVERLAY */
+.edit-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.avatar:hover .edit-text {
+  opacity: 1;
+}
+
+/* PROFILE INFO */
+.profile-info h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.profile-info p {
+  color: #555;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.actions button,
+.actions a {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* FEED */
+.feed {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.feed h4 {
+  margin-bottom: 10px;
+}
+
+.feed ul {
+  list-style: none;
+}
+
+.feed li {
+  background: #f4f6fb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0,0,0,.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal-actions button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
